@@ -1,0 +1,425 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .cabecalho{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+    }
+    
+    .logo{
+        a{
+            color: rgb(101, 101, 101);
+            font-size: 40px;
+            padding: 20px 50px;
+            font-family: "Cal Sans", sans-serif;
+            span{
+                color: rgb(4, 225, 225);
+            }
+        }
+    }
+    .menu_navegacao{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        gap: 25px;
+        padding: 20px;
+        a{
+            font-family: "Montserrat", sans-serif;
+            font-size: 20px;
+            color: rgb(101, 101, 101);
+            &:hover{
+                text-decoration: underline;
+                text-decoration-color: rgb(4, 225, 225) ;
+            }
+        }
+    }
+}
+main{
+    padding-left: 75px;
+    .home{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        min-height: 100vh;
+        .homehome{
+            h1{
+            font-family: "Cal Sans", sans-serif;
+            font-size: 50px;
+            font-weight: bold;
+            color:rgb(73, 73, 73);
+            span{
+                color: rgb(4, 225, 225);
+            }
+            }
+            h2{
+                font-family: "Cal Sans", sans-serif;
+                font-weight: bold;
+                margin-top: 15px;
+                font-size: 35px;
+                color:rgb(73, 73, 73);
+            }
+            p{
+                margin-top: 15px ;
+                font-size: 20px;
+                font-family: "Montserrat", sans-serif;
+                line-height: 1.6;
+                color:rgb(73, 73, 73);
+            }
+            .button{
+                margin-top: 40px;
+                .btn01{
+                    background-color: rgb(4, 225, 225);
+                    color: white;
+                    font-family: "Cal Sans", sans-serif;
+                    font-size: 20px;
+                    padding: 11px 20px;
+                    border-radius: 10px;
+
+
+                }
+                .btn02{
+                    margin-left: 20px;
+                    font-family: "Cal Sans", sans-serif;
+                    font-size: 20px;
+                    padding: 10px 20px;
+                    border: 2px solid rgb(4, 225, 225);
+                    color: rgb(73, 73, 73);
+                    border-radius: 10px;
+                }
+            }
+            }
+            .minha_foto{
+                margin-top: 60px;
+                
+                img{ 
+                width: 630px;
+                height: 675px;
+            }
+            }
+    }
+
+    .sobre{
+        min-height: 100vh;
+        margin-top: 30px;
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        padding: 25px 70px;
+        scroll-margin-top: 120px;
+        h2{
+            color: rgb(4, 225, 225) ;
+            font-family: "Cal Sans", sans-serif;
+            font-size: 45px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        p{
+            color: rgb(101, 101, 101);
+            font-size: 25px;
+            font-family: "Montserrat", sans-serif;
+            line-height: 1.5;
+        }
+        .linguagens{
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+            padding: 40px;
+            gap: 40px;
+            margin-top: 25px;
+            h3{
+                font-size: 30px;
+                text-align: center;
+                color: rgb(4, 225, 225) ;
+                font-family: "Cal Sans", sans-serif;
+            }
+            .logo_linguagens{
+                display: flex;
+                flex-direction: row;
+                gap: 20px;
+                img{
+                width: 100px;
+                height: 100px;
+
+            }
+            }
+        }
+    }
+    .projetos{ 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 10px;
+        .meus_projetos{
+            
+            h2{
+                text-align: center;
+                color: rgb(4, 225, 225) ;
+                font-family: "Cal Sans", sans-serif;
+                font-size: 45px;
+                margin-bottom: 40px;
+            }
+            .pj{
+                display: grid;
+                grid-template-columns: repeat(2, 450px);
+                justify-content: center;
+                align-items: center;
+                border: 3px solid rgb(4, 225, 225);
+                border-radius: 15px;
+                transition: 0.7s ease-in-out;
+                margin-top: 25px;
+                &:hover{
+                    transform: scale(1.07);
+                }
+                .foto_projeto{
+                    width: 400px;
+                    height: 250px;
+                    margin-left: 25px;
+                    margin-bottom: 5px;
+                    border-radius: 35px;
+                    padding: 10px;
+                }
+                .descricao_projeto{
+                    margin-top: 45px;
+                    h3{
+                        font-size: 30px;
+                        text-align: center;
+                        font-family: "Cal Sans", sans-serif;
+                        color: rgb(4, 225, 225)
+                    }
+                    p{
+                        font-size: 20px;
+                        line-height: 1.5;
+                        padding: 10px 10px;
+                        text-align: center;
+                        font-family: "Montserrat", sans-serif;
+                    }
+                }
+                .links{
+                    display: flex;
+                    justify-content: center;
+                    gap: 20px;
+                    padding: 10px;
+                }
+                .links a {
+                    display: flex;
+                    align-items: center;  
+                    flex-direction: row;
+                    text-decoration: none;
+                    color: black; 
+                    font-size: 20px;
+                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                    background-color:rgb(4, 225, 225);
+                    border-radius: 15px;
+                    padding: 10px 10px;
+                    transition: 0.5s ease-in-out;
+                    &:hover{
+                        transform: scale(1.08);
+                        background-color: rgb(153, 240, 240);
+                    }
+
+                    }
+                .links img {
+                    width: 24px; /* Ajuste conforme necessário */
+                    height: auto;
+                    }
+                .link1 img{
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+}
+footer{
+    .contato{
+        margin-top: 25px;
+        border-top: 2px solid black;
+        ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            padding: 20px;
+            .linkedin i{
+                background-color: rgb(255, 255, 255);
+                padding: 10px;
+                border: 2px solid black;
+                border-radius: 30px;
+                transition: 0.5s ease-in-out;
+                font-size: 30px;
+                &:hover{
+                    transform: scale(1.09);
+                    background-color: #0077B5;
+                    color: white;
+                }
+            }
+            .github i{
+                background-color: rgb(255, 255, 255);
+                padding: 10px;
+                border: 2px solid black;
+                border-radius: 30px;
+                transition: 0.5s ease-in-out;
+                font-size: 30px;
+                &:hover{
+                    transform: scale(1.09);
+                    color: white;
+                    background-color: rgb(0, 0, 0);
+                }
+            }
+            .whatsapp i{
+                background-color: rgb(255, 255, 255);
+                padding: 10px;
+                border: 2px solid black;
+                border-radius: 30px;
+                transition: 0.5s ease-in-out;
+                font-size: 30px;
+                &:hover{
+                    transform: scale(1.09);
+                    background-color: #25D366;
+                    color: white;
+                }
+            }
+        }
+    }
+    .direitos_autorais{
+        text-align: center;
+        font-family: "Cal Sans", sans-serif;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* ===== HEADER ===== */
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .cabecalho {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo a {
+        font-size: 26px;
+        padding: 10px 0;
+    }
+
+    .menu_navegacao {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    /* ===== MAIN ===== */
+    main {
+        padding-left: 0;
+    }
+
+    /* ===== HOME ===== */
+    .home {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .homehome {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .homehome h1 {
+        font-size: 32px;
+    }
+
+    .homehome h2 {
+        font-size: 24px;
+    }
+
+    .homehome p {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    /* ===== FOTO PRINCIPAL ===== */
+    .minha_foto {
+        display: flex;
+        justify-content: center;
+    }
+
+    .minha_foto img {
+        width: 90%;
+        height: auto;
+    }
+
+    /* ===== SOBRE ===== */
+    .sobre {
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .sobre p {
+        text-align: center;
+    }
+
+    /* ===== LINGUAGENS ===== */
+    .logo_linguagens {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    /* ===== PROJETOS ===== */
+    .projetos {
+        align-items: center;
+        text-align: center;
+    }
+
+    .pj {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        text-align: center;
+    }
+
+    .foto_projeto {
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .descricao_projeto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .links {
+        justify-content: center;
+    }
+
+    /* ===== FOOTER ===== */
+    footer ul {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .direitos_autorais {
+        text-align: center;
+    }
+}
